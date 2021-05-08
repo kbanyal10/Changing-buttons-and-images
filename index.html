@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-
     <div>
-        <input type="button" value="1" id="myButton1"></input> 
-
+        <input type="button" value="1" id="myButton1"></input>
     </div>
-    <img src="./imagesopg/formula.jpg" alt="Smiley face" height="420" width="420" id="changing">
+    <img src="./formula.jpg" alt="&#128513" height="420" width="420" id="changing">
 
-    
 </body>
 <script>
 
-     test = document.querySelector('#myButton1');
-     change = document.querySelector('#changing');
-
-
-    test.addEventListener('click', function get(e){
+    test = document.querySelector('#myButton1');
+    change = document.querySelector('#changing');
+    test.addEventListener('click', function get(e) {
 
         console.log(e.target.value);
-        if(e.target.value==1){
-            change.src = "./imagesopg/racecar.jpg";
-
+        if (e.target.value == 1) {
+            change.src = "./racecar.jpg";
             e.target.value = 2;
-
         }
-       else if(e.target.value==2){
-        change.src = "./imagesopg/asphalt.jpg";
-
-e.target.value = 3;
-
-}
-else if(e.target.value==3){
-
-    change.src = "./imagesopg/blackcar.jpg";
-
-e.target.value = 4;
-
-}
-else if(e.target.value==4){
-    change.src = "./imagesopg/formula.jpg";
-
-e.target.value = "return";
-
-}
-else if(e.target.value=="return"){
-
-    change.src = "";
-}
-        
-
-        
-
+        else if (e.target.value == 2) {
+            change.src = "./asphalt.jpg";
+            e.target.value = 3;
+        }
+        else if (e.target.value == 3) {
+            change.src = "./blackcar.jpg";
+            e.target.value = 4;
+        }
+        else if (e.target.value == 4) {
+            change.src = "./formula.jpg";
+            e.target.value = "return";
+        }
+        else if (e.target.value == "return") {
+            e.target.value = 1;
+            change.src = "./racecar.jpg";
+        }
     });
 
+
+
+</script>
+
+<<<<<<< HEAD:OPG1.html
+</html>
+=======
    
     
     </script>
 </html>
+>>>>>>> bb534062e4bce75541749aaf09d01d23acc01827:index.html
